@@ -1,1 +1,2 @@
-angular.module('artists', []);
+angular.module('artists', ['ngResource'])
+  

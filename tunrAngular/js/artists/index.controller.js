@@ -1,6 +1,7 @@
 angular.module('artists')
-.controller("ArtistsIndexController", ArtistsIndexControllerCallback);
+.controller("ArtistsIndexController", ["ArtistFactory", ArtistsIndexControllerCallback]);
 
-function ArtistsIndexControllerCallback(){
-  this.name = "bob";
+function ArtistsIndexControllerCallback(ArtistFactory){
+  this.artists = ArtistFactory.query();
+  console.log(this.artists);
 }
