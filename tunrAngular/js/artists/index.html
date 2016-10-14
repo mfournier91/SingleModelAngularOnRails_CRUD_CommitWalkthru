@@ -1,5 +1,4 @@
 <h2>Artists</h2>
-
 <div data-ng-repeat="artist in vm.artists">
-  {{artist.name}}
+  <p><a data-ui-sref='artistShow({id: artist.id})'>{{artist.name}}</a></p>
 </div>

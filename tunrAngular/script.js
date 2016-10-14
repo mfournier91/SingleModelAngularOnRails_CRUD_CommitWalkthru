@@ -14,5 +14,11 @@ angular.module("tunr", [
         templateUrl: 'js/artists/index.html',
         controller: 'ArtistsIndexController',
         controllerAs: 'vm'
-      });
+      })
+      .state('artistShow', {
+        url: '/artists/:id',
+        templateUrl: 'js/artists/show.html',
+        controller: 'ArtistShowController',
+        controllerAs: 'vm'
+      })
   }
