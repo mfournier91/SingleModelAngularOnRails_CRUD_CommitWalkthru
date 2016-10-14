@@ -1,1 +1,7 @@
-{{vm.artist.name}}
+<p>{{vm.artist.name}}</p>
+
+<form data-ng-submit="vm.update()">
+  <label>Name:</label>
+  <input type="text" value="vm.artist.name" data-ng-model="vm.artist.name">
+  <button type="submit">Update Artist</button>
+</form>
