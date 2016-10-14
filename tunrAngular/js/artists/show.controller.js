@@ -7,4 +7,8 @@ angular.module('artists')
     this.update = function() {
       vm.artist.$update({id: $stateParams.id})
     }
+    this.destroy = function() {
+      vm.artist.$delete({id: $stateParams.id})
+      $state.go('artistIndex');
+    }
   }
